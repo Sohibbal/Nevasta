@@ -1,0 +1,387 @@
+/* Import Font (Google Font) */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* All Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f6faff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Style */
+header {
+  background: #26354C;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Rubik", serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+
+header .Logo {
+  max-width: 50px;
+  height: auto;
+  margin-right: 1rem; 
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+/* Navigasi (ul) */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-family: "Rubik", serif;
+}
+
+nav ul li a i {
+  margin-right: 0.5rem;
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+}
+
+/* Main Content Style */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+/* Article Style*/
+article {
+  flex: 2;
+  background: #e3f2fd;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Roboto", serif;
+}
+
+article header {
+  background: #26354C;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article header h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+article p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+article footer p {
+  text-align: right;
+  font-style: italic;
+  margin-bottom: auto;
+  color: #555;
+}
+
+article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Aside Style */
+aside {
+  flex: 1;
+  background: #e3f2fd;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Roboto", serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+aside:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+aside img {
+  max-width: 100%;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+}
+
+aside h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+aside h4 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+aside p {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Section Pengurus Style */
+#pengurus {
+  margin: 2rem 0;
+  text-align: center;
+  font-family: "Roboto", serif;
+}
+
+#pengurus header {
+  background-color: #26354C;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pengurus h3 {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.pengurus-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.7rem;
+  margin-top: 2rem;
+}
+
+.pengurus-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  width: calc(16% - 1rem);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pengurus-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pengurus-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4%;
+  margin-bottom: 1rem;
+}
+
+.pengurus-card h5 {
+  font-size: 1.2rem;
+  color: #26354C;
+  margin-bottom: 0.5rem;
+}
+
+.pengurus-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+/* Section Photo Gallery Stayle*/
+.photo-gallery {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  filter: contrast(1.4) saturate(1);
+}
+
+.gallery-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styles */
+footer {
+  color: #333;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Effect Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Layout*/
+@media (max-width: 1080px) {
+  header {
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+  }
+
+  header .Logo {
+    max-width: 40px;
+    margin-bottom: 0.5rem; 
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+
+  nav ul {
+    font-size: 1rem;
+    display: flex; 
+    justify-content: center; 
+    margin-top: 1rem; 
+    padding: 0;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin: 0 1rem; 
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  article, aside {
+      flex: 1;
+  }
+
+  .pengurus-card {
+    width: calc(33% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+      padding: 1rem;
+  }
+
+  article, aside {
+      flex: 1;
+  }
+
+  .pengurus-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  header .Logo {
+    max-width: 35px;
+    margin-bottom: 0.5rem;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  article, aside {
+    flex: 1;
+    width: 100%; 
+  }
+
+  .pengurus-card {
+    width: 100%; 
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  nav ul li i {
+    font-size: 1rem;
+  }
+}
+
+/*View Port*/
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
